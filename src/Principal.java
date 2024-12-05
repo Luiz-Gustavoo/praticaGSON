@@ -5,9 +5,7 @@ public class Principal {
 
         Gson gson = new Gson();
 
-        String json = "{\"nome\": \"joão\", " +
-                        "\"cidade\": \"Apucarana\", " +
-                        "\"idade\": 30}";
+        String json = "{ \"Nome\": \"João\", \"cidade\": \"Apucarana\", \"idade\": 30}";
 
         Pessoa pessoa1 = gson.fromJson(json, Pessoa.class);
 
@@ -18,6 +16,12 @@ public class Principal {
         System.out.println(nome);
         System.out.println(cidade);
         System.out.println(idade);
+
+        Pessoa pessoa2 = new Pessoa("Luiz", "Apucarana", 22);
+
+        String json2 = gson.toJson(pessoa2);
+        System.out.println(json2);
+
 
     }
 }
