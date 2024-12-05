@@ -1,3 +1,6 @@
+package br.com.pratica.principal;
+
+import br.com.pratica.modelos.Pessoa;
 import com.google.gson.Gson;
 
 public class Principal {
