@@ -5,10 +5,24 @@ public class Titulo {
     private String diretor;
     private int duracaoMinutos;
 
+    public String getNome() {
+        return nome;
+    }
+
+    public String getDiretor() {
+        return diretor;
+    }
+
+    public int getDuracaoMinutos() {
+        return duracaoMinutos;
+    }
+
     public Titulo(String nome, String diretor, int duracaoMinutos) {
         this.nome = nome;
         this.diretor = diretor;
         this.duracaoMinutos = duracaoMinutos;
+
+
     }
 
     @Override
