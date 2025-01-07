@@ -7,6 +7,10 @@ public class ConverteJSon {
 
 
     public String paraJson(Object obj) {
+
+        if (obj instanceof Titulo) {
+            System.out.println("Título " + ((Titulo) obj).getNome() + " convertido para JSON:");
+        }
         String retorno = gson.toJson(obj);
         return retorno;
     }
