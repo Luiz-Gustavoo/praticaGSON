@@ -10,4 +10,11 @@ public class Titulo {
         this.diretor = diretor;
         this.duracaoMinutos = duracaoMinutos;
     }
+
+    @Override
+    public String toString() {
+        return "Nome: " + nome +
+        "\n" + "Diretor: " + diretor +
+        "\n" + "Duração em minutos: " + duracaoMinutos;
+    }
 }
