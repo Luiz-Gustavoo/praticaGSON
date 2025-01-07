@@ -13,6 +13,8 @@ public class ConverteJSon {
 
         if (obj instanceof Titulo) {
             System.out.printf("Título " + "{%s}" + " convertido para JSON:\n", ((Titulo) obj).getNome());
+        } else if (obj instanceof Veiculo) {
+            System.out.printf("Veículo" + "{%s}" + " convertido para JSON:\n", ((Veiculo) obj).getNome());
         }
         String retorno = gson.toJson(obj);
         return retorno;
