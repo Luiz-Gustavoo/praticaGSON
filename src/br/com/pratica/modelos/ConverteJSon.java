@@ -1,9 +1,12 @@
 package br.com.pratica.modelos;
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 public class ConverteJSon {
-    private Gson gson = new Gson();
+    private Gson gson = new GsonBuilder()
+            .setPrettyPrinting()
+            .create();
 
 
     public String paraJson(Object obj) {
